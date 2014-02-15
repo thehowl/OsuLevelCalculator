@@ -7,9 +7,6 @@ A simple calculator in php were you input the level you want to reach in Osu!, a
 Things to do
 ------------
 
-* FIX: Approximate to the lowest value (since in Osu! there aren't scores after the .)
-* FIX: Make an error text if there's inserted a number
-* FIX: Don't make the automatic typing on the textbox
 * ADD: Put a CSS
 * ADD: Put a cool logo
 * ADD: Make a more complex code that calculates the points that you have to get to reach the next level
