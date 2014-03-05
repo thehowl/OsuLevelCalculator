@@ -33,8 +33,11 @@ else
 <html>
 <head>
 <title>Results</title>
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div id="container" align="center"><div class="text" align="left"><div class="title">Results</div><br><div align="center" class="divisor"></div><br>
 Here's the result: <? echo round($resultfinal); ?>.<br><br>Do it again!<br><? require 'form.php' ?>
+</div></div><br>version 1.3
 </body>
 </html>
