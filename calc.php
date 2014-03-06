@@ -37,7 +37,13 @@ else
 </head>
 <body>
 <div id="container" align="center"><div class="text" align="left"><div class="title">Results</div><br><div align="center" class="divisor"></div><br>
-Here's the result: <? echo round($resultfinal); ?>.<br><br>Do it again!<br><? require 'form.php' ?>
-</div></div><br>version 1.3
+Here's the result: <?
+	echo round($resultfinal);
+?>.<br><br>Do it again!<br><? 
+	require 'form.html' 
+?>
+</div></div><br><?
+	include 'footer.html';
+?>
 </body>
 </html>

@@ -7,7 +7,7 @@ A simple calculator in php were you input the level you want to reach in Osu!, a
 Things to do
 ------------
 
-* FIX/ADD: Make the CSS even better
+* FIX/ADD: Make the CSS even better - And add a footer's CSS
 * ADD: Make a more complex code that calculates the points that you have to get to reach the next level
 * ADD: Integrate the website with some of the Osu! API to integrate the website with the user account
 * ADD: Put some footer

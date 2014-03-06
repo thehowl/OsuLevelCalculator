@@ -1,21 +1,25 @@
 /* Style of Osu! Level Calculator */
 /* Completely made by stroke by TheHowl */
-body {background: #ffb5b5}
+body {background: #ffb5b5;
+text-align: center;}
 
 #container {text-shadow: 1px 1px 6px #000000;
 -webkit-border-radius: 15px;
 border-radius: 15px;
 background: #FFF;
-min-width: 700px;
+width: 700px;
 padding-top: 13px;
 padding-bottom: 10px;
-min-height: 400px
+min-height: 275px;
+position: relative;
+margin: 10px 260px;
 }
 
 .text {
 padding: 13px 26px;
 font-family: verdana, arial;
-font-size: 15px
+font-size: 15px;
+text-align: left;
 }
 
 .title {
