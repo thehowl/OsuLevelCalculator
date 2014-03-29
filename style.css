@@ -1,9 +1,10 @@
 /* Style of Osu! Level Calculator */
 /* Completely made by stroke by TheHowl */
-body {background: #ffb5b5;
+body {
+background: #ffb5b5;
 text-align: center;}
 
-#container {text-shadow: 1px 1px 6px #000000;
+#container {
 -webkit-border-radius: 15px;
 border-radius: 15px;
 background: #FFF;
@@ -13,6 +14,7 @@ padding-bottom: 10px;
 min-height: 275px;
 position: relative;
 margin: 10px 260px;
+opacity: 0.9;
 }
 
 .text {
@@ -24,9 +26,8 @@ text-align: left;
 
 .title {
 font-size: 30px;
-color: #A8DCEE;
+color: #33ADFF;
 font-family: arial;
-text-shadow: none;
 }
 
 .divisor {
@@ -35,12 +36,34 @@ background: #C5C5C5;
 width: 100%
 }
 
-.submit {-webkit-border-radius: 10px;
-border-radius: 7px;
-border: 2px solid #C5C5C5;
+.submit {
+-webkit-border-radius: 5px;
+border-radius: 5px;
+border: 1px solid #C5C5C5;
 outline: none
 }
 
-.result {color: #1BF213;
+.result {
+color: #1BF213;
 font-size: 32px
+}
+
+#footer {
+background: #FFF;
+height: 60px;
+width: 450px;
+font-size: 10pt;
+padding: 0px 2px;
+opacity: 0.9;
+margin-top: 7px;
+margin-left: 400px;
+}
+
+#footer:hover, #container:hover {
+opacity: 1.0
+}
+
+#footer a {
+text-decoration: none;
+color: #33ADFF;
 }

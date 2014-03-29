@@ -18,7 +18,7 @@ elseif ($level>="101")
   }
 else
   {
-  $result = "An error happened. Please <a href=\"https://github.com/TheHowl/OsuLevelCalculator/issues\" target=\"_blank\" title=\"Report it on GitHub\">Report it</a> saying also what you wrote in the form";
+  $result = "error";
   };
 if ($result<"0")
 	{
@@ -37,9 +37,9 @@ else
 </head>
 <body>
 <div id="container" align="center"><div class="text" align="left"><div class="title">Results</div><br><div align="center" class="divisor"></div><br>
-Here's the result: <?
+Here's the result: <div align=center class=result><?
 	echo round($resultfinal);
-?>.<br><br>Do it again!<br><? 
+?>.</div><br>Do it again!<br><? 
 	require 'form.html' 
 ?>
 </div></div><br><?
