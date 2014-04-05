@@ -38,7 +38,7 @@ else
 <body>
 <div id="container" align="center"><div class="text" align="left"><div class="title">Results</div><br><div align="center" class="divisor"></div><br>
 Here's the result: <div align=center class=result><?
-	echo round($resultfinal);
+	echo number_format(round($resultfinal));
 ?>.</div><br>Do it again!<br><? 
 	require 'form.html' 
 ?>
