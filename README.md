@@ -7,6 +7,6 @@ A simple calculator in php were you input the level you want to reach in Osu!, a
 Things to do
 ------------
 
-* Before there was here complex code etc... But now I think: No.
-* ADD: put it on the Osu! forums.
-* ADD: Finish it with all the rest and fix all the issues that there will be found.
+* [API Integration](http://osu.ppy.sh/forum/p/2987978) [(or maybe not?)](http://osu.ppy.sh/forum/p/2988645)
+* Make a (20%) cooler CSS
+* Maybe something else? I don't know. You can also pull something that YOU want in this code [over here](https://github.com/TheHowl/OsuLevelCalculator/pulls), I'll may push it into the master branch :P Stay tuned for other changes also on the [official topic over here!](http://osu.ppy.sh/forum/t/199230/start=0).
