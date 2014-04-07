@@ -2,7 +2,7 @@
 $apikey = "API KEY HERE"; // This is holy shit damn important. To make everything work, edit this as the page of the wiki "API key" says of the repo of osu! level calculator
 $JSON = file_get_contents("https://osu.ppy.sh/api/get_user?k=" . $apikey . "&u=" . $_POST["nickname"] . "&m=" . $_POST["mode"]);
 $data = json_decode($JSON);
-$partlvl = $data[1]->level + 1;
+$partlvl = $data[0]->level + 1;
 $level = round($partlvl) + 1;
 if ($level<="100")
   {
@@ -32,7 +32,7 @@ else
 	{
 	$txcz = $result;
 	}
-$resultfinal = $data[1]->total_score - $txcz;
+$resultfinal = $txcz - $data[0]->total_score;
 ?>
 <!DOCTYPE html>
 <html>
