@@ -13,7 +13,7 @@ padding-top: 13px;
 padding-bottom: 10px;
 min-height: 275px;
 position: relative;
-margin: 10px 260px;
+margin: 0 auto;
 opacity: 0.9;
 }
 
@@ -55,15 +55,25 @@ width: 450px;
 font-size: 10pt;
 padding: 0px 2px;
 opacity: 0.9;
-margin-top: 7px;
-margin-left: 400px;
+margin: 0 auto;
 }
 
 #footer:hover, #container:hover {
 opacity: 1.0
 }
 
-#footer a {
+#qa {
+opacity: 0.8;
+background: #FFF;
+height: 45px;
+width: 550px;
+font-size: 18pt;
+padding: 6px 2px;
+margin: 0 auto;
+border-radius: 9px
+}
+
+a {
 text-decoration: none;
 color: #33ADFF;
 }
