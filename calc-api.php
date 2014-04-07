@@ -1,8 +1,9 @@
 <?
 $apikey = "API KEY HERE"; // This is holy shit damn important. To make everything work, edit this as the page of the wiki "API key" says of the repo of osu! level calculator
-$JSON = file_get_contents("https://osu.ppy.sh/api/get_user?k=" . $apikey . "&u=" . $_POST["nickname"] . "&m=" . S_POST["mode"]);
+$JSON = file_get_contents("https://osu.ppy.sh/api/get_user?k=" . $apikey . "&u=" . $_POST["nickname"] . "&m=" . $_POST["mode"]);
 $data = json_decode($JSON);
-$level = round($data[1]->level) + 1;
+$partlvl = $data[1]->level + 1;
+$level = round($partlvl) + 1;
 if ($level<="100")
   {
   if ($level>="2") // This because if the value is 0 or 1, or any other value, it creates an error
@@ -41,10 +42,10 @@ $resultfinal = $data[1]->total_score - $txcz;
 </head>
 <body>
 <div id="container" align="center"><div class="text" align="left"><div class="title">Results</div><br><div align="center" class="divisor"></div><br>
-Here's the result: <div align=center class=result><?
+So, what's the score that you need to reach the next level? <div align=center class=result><?
 	echo number_format(round($resultfinal));
 ?>.</div><br>Do it again!<br><? 
-	require 'form.html' 
+	require 'form-api.html' 
 ?>
 </div></div><br><?
 	include 'footer.html';
