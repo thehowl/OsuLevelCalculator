@@ -10,7 +10,7 @@ if (!isset($_POST['leveltoreach']))
 }
 else $level = $_POST['leveltoreach'];
 
-function ScoreLevelCalculator ($level)
+function ScoreLevelCalculator ($level,$currentScore = 0)
 {
 	if ($level <= 100)
 	{
@@ -33,7 +33,7 @@ function ScoreLevelCalculator ($level)
 
 	$result = abs($result);
 	
-	return ($result - $data[0]->total_score);
+	return ($result - $currentScore);
 }
 
 
@@ -47,7 +47,7 @@ function ScoreLevelCalculator ($level)
 <body>
 <div id="container" align="center"><div class="text" align="left"><div class="title">Results</div><br><div align="center" class="divisor"></div><br>
 So, what's the score that you need to reach the next level? <div align=center class=result><?
-	echo number_format(round(ScoreLevelCalculator ($level)));
+	echo number_format(round(ScoreLevelCalculator ($level, (isset($_POST["nickname"]) ? $data[0]->total_score : 0 ))));
 ?>.</div><br>Do it again!<br><? 
 	require 'form-api.html' 
 ?>
