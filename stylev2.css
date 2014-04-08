@@ -24,9 +24,10 @@ h2 {
 }
 
 /* from here starts the form */
-form button {
+button, input, selection {
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 4px;
     outline: none;
     padding: 3px 4px;
+    font-family: arial;
 }
