@@ -1,0 +1,32 @@
+/* osu! level calculator style v2
+Completely re-made from stroke by thehowl */
+body {
+    background: #FFF;
+    color: #222;
+    margin-top:75px;
+    margin-left:50px;
+}
+    
+body @font-face {
+  font-family: "Segoe UI Light";
+  src: url("segoeuil.ttf") format("truetype");
+}
+
+h1 {
+    font-size: 122pt;
+}
+
+h2 {
+    font-size: 70pt;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 0.67);
+    margin-left: 55px;
+}
+
+/* from here starts the form */
+form button {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    padding: 3px 4px;
+}
