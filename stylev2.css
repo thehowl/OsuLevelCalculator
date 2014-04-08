@@ -1,33 +1,52 @@
 /* osu! level calculator style v2
 Completely re-made from stroke by thehowl */
-body {
-    background: #FFF;
-    color: #222;
-    margin-top:75px;
-    margin-left:50px;
-}
-    
-body @font-face {
+
+/* defines font url for Segoe UI Light */
+@font-face {
   font-family: "Segoe UI Light";
   src: url("segoeuil.ttf") format("truetype");
 }
 
+/* BODY AND TITLES */
+body {
+    background: #FFF;
+    color: #222;
+    font-family: "Segoe UI Light";
+}
+
 h1 {
-    font-size: 122pt;
+    font-size: 35pt;
+    margin-top:75px;
+    margin-left:50px;
 }
 
-h2 {
-    font-size: 70pt;
+.txt {
     text-transform: uppercase;
-    color: rgba(34, 34, 34, 0.67);
+    opacity: 0.7;
     margin-left: 55px;
+    padding-top: 10px;
+    font-size: 15pt;
 }
 
-/* from here starts the form */
-button, input, selection {
-    -webkit-border-radius: 5px;
-    border-radius: 4px;
+#select {
+    text-transform: uppercase;
+    font-size: 50pt;
+    opacity: 0.7;
+}
+
+#select a {
+    color: #12bcdb;
+    text-decoration: none;
+    word-spacing: 18pt;
+}
+
+#select a:hover {
+    color: #10cff2
+}
+    
+
+/* FORM */
+button, input {
     outline: none;
     padding: 3px 4px;
-    font-family: arial;
 }
