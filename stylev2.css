@@ -43,6 +43,13 @@ h1 {
 #select a:hover {
     color: #10cff2
 }
+
+.result {
+    font-size: 42pt;
+    color: #10d82b;
+    margin-left: 70px;
+    padding-top: 10px;
+}
     
 
 /* FORM */

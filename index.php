@@ -20,7 +20,7 @@ function ScoreLevelCalculator ($level,$currentScore = 0)
 		$part = $level - 100;
 		$result = 26931190829 + 100000000000 * $part;
 	}
-	else throw new Exception ("Holy shit, this is an error.",111);
+	else throw new Exception ("Holy shit, this is an error. Please write more info in the issues",111);
 
 	$result = abs($result);
 
@@ -46,11 +46,25 @@ elseif ($_POST['calct'] = 'cl') {
 </head>
 <body>
 <div align="center" id="select"><a href="/">home</a> <a href="classic.php">classic</a> <a href="http://osu.ppy.sh/forum/t/199230/start=0">topic</a></div>
-    <h1>osu! level calculator</h1>
-<? 
-	require 'form.html';
-?></div></div><br><?
-	include 'footer.html';
+    <?
+if (isset($final)) {
+    echo '<h1>Results</h1>';
+    if ($_POST['calct'] = 'api' {
+        echo '<div class="txt">So, how much score needs ' . $_POST["nickname"] . ' to reach the next level?</div>';
+    }
+    else {
+        echo '<div class="txt">So, to reach level ' . $_POST["leveltoreach"] . ', you need a score of </div>';
+    }
+    echo '<br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
+    require 'form.html';
+    
+}
+else {
+    echo '<h1>osu! level calculator</h1>';
+    require 'form.html';
+    echo '<br><br>';
+    include 'footer.html';
+}
 ?>
 </body>
 </html>
