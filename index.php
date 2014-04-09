@@ -48,7 +48,7 @@ switch ($_GET["calct"]) {
     case 'api': echo '<h1>Results</h1> <div class="txt">So, how much score needs ' . $_GET["nickname"] . ' to reach the next level?</div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
     require 'form.html';
     include 'footer.html'; break;
-    case 'cl':  echo '<div class="txt">So, to reach level ' . $_GET["leveltoreach"] . ', you need a score of </div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
+    case 'cl':  echo '<h1>Results</h1><div class="txt">So, to reach level ' . $_GET["leveltoreach"] . ', you need a score of </div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
     require 'form.html';
     include 'footer.html'; break;
     default: echo '<h1>osu! level calculator</h1>';
