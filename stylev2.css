@@ -1,0 +1,78 @@
+/* osu! level calculator style v2
+Completely re-made from stroke by thehowl */
+
+/* defines font url for Segoe UI Light */
+@font-face {
+  font-family: "Segoe UI Light";
+  src: url("segoeuil.ttf") format("truetype");
+}
+
+/* BODY AND TITLES */
+body {
+    background: #FFF;
+    color: #222;
+    font-family: "Segoe UI Light";
+}
+
+h1 {
+    font-size: 35pt;
+    margin-top:75px;
+    margin-left:50px;
+}
+
+.txt {
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-left: 70px;
+    padding-top: 10px;
+    font-size: 15pt;
+}
+
+#select {
+    text-transform: uppercase;
+    font-size: 50pt;
+    opacity: 0.7;
+}
+
+a {
+    color: #12bcdb;
+    text-decoration: none;
+    word-spacing: 18pt;
+}
+
+a:hover {
+    color: #10cff2
+}
+
+.result {
+    font-size: 42pt;
+    color: #10d82b;
+    margin-left: 70px;
+    padding-top: 10px;
+}
+    
+
+/* FORM */
+button, input {
+    outline: none;
+    padding: 3px 4px;
+}
+
+button {
+    background: #f7f7f7;
+    cursor: pointer;
+    border: 0;
+    font-family: "Segoe UI Light";
+    text-transform: uppercase;
+    height: 40px;
+    width: 100px;
+    font-size: 15pt
+}
+
+.submit {
+    background: #f7f7f7;
+    font-family: "Segoe UI Light";
+    font-size: 15pt;
+    width: 400px;
+    border: 0;
+}
