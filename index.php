@@ -44,18 +44,25 @@ switch ($_GET["calct"]) {
 <body>
 <div align="center" id="select"><a href="/">home</a> <a href="#classicmode">classic</a> <a href="http://osu.ppy.sh/forum/t/199230/start=0">topic</a></div>
     <?
-switch ($_GET["calct"]) {
+switch (isset($_GET["calct"])) {
+    case 'true':
+    switch ($_GET["calct"]) {
     case 'api': echo '<h1>Results</h1> <div class="txt">So, how much score needs ' . $_GET["nickname"] . ' to reach the next level?</div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
     require 'form.html';
     include 'footer.html'; break;
     case 'cl':  echo '<h1>Results</h1><div class="txt">So, to reach level ' . $_GET["leveltoreach"] . ', you need a score of </div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
     require 'form.html';
     include 'footer.html'; break;
+    default: echo '<div class="txt">error</div><br>';
+    require 'form.html';
+    include 'footer.html'; break;
+    }   break;
     default: echo '<h1>osu! level calculator</h1>';
     require 'form.html';
     echo '<br><br>';
     include 'footer.html'; break;
-}   
+}
+
 ?>
 </body>
 </html>
