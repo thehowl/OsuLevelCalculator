@@ -1,4 +1,12 @@
 <?
+header ('Content-type: text/html; charset=utf-8');
+$brlang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
+if(file_exists("lang-" . $brlang . ".php")) {
+    include "lang-" . $brlang . ".php";
+}
+else {
+    include "lang-en.php";
+}
 $apikey = "API KEY HERE"; // This is holy shit damn important. To make everything work, edit this as the page of the wiki "API key" says of the repo of osu! level calculator
 // Thanks to pizza kun for the function
 function ScoreLevelCalculator ($level,$currentScore = 0)
@@ -21,7 +29,7 @@ function ScoreLevelCalculator ($level,$currentScore = 0)
 		$result = 26931190829 + 100000000000 * $part;
 	}
 	else { 
-        throw new Exception ("Holy shit, this is an error. Please write more info in the issues",111);
+        throw new Exception ($olclang["err"],111);
     }
 
 	return ($result - $currentScore);
@@ -31,33 +39,34 @@ switch ($_GET["calct"]) {
 	$json = file_get_contents($query);
 	$data = json_decode($json);
 	$actlvl = round($data[0]->level) + 1;
-    $final = number_format(round(ScoreLevelCalculator ($actlvl,$data[0]->total_score))); break;
-    case 'cl': $final = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
+    $thefinalresult = number_format(round(ScoreLevelCalculator ($actlvl,$data[0]->total_score))); break;
+    case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<title>osu! level calculator</title>
+<title><? echo $olclang["title"]; ?></title>
 <link href="stylev2.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div align="center" id="select"><a href="/">home</a> <a href="#classicmode">classic</a> <a href="http://osu.ppy.sh/forum/t/199230/start=0">topic</a></div>
+<div align="center" id="select"><a href="/"><? echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><? echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><? echo $olclang["ab-top"]; ?></a></div>
     <?
 switch (isset($_GET["calct"])) {
     case 'true':
     switch ($_GET["calct"]) {
-    case 'api': echo '<h1>Results</h1> <div class="txt">So, how much score needs ' . $_GET["nickname"] . ' to reach the next level?</div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
+    case 'api': echo $olclang["api-res"] . $thefinalresult . $olclang["dia"];
     require 'form.html';
     include 'footer.html'; break;
-    case 'cl':  echo '<h1>Results</h1><div class="txt">So, to reach level ' . $_GET["leveltoreach"] . ', you need a score of </div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
+    case 'cl':  echo $olclang["cl-res"] . $thefinalresult . $olclang["dia"];
     require 'form.html';
     include 'footer.html'; break;
-    default: echo '<div class="txt">error</div><br>';
+    default: echo '<div class="txt">' . $olclang["err-2"] . '</div><br>';
     require 'form.html';
     include 'footer.html'; break;
     }   break;
-    default: echo '<h1>osu! level calculator</h1>';
+    default: echo '<h1>' . $olclang["title"] . '</h1>';
     require 'form.html';
     echo '<br><br>';
     include 'footer.html'; break;
