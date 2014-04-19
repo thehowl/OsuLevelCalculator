@@ -1,7 +1,8 @@
 <?
-$br-lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
-if(file_exists("lang-" . $br-lang . ".php")) {
-    include "lang-" . $br-lang . ".php";
+header ('Content-type: text/html; charset=utf-8');
+$brlang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
+if(file_exists("lang-" . $brlang . ".php")) {
+    include "lang-" . $brlang . ".php";
 }
 else {
     include "lang-en.php";
@@ -28,7 +29,7 @@ function ScoreLevelCalculator ($level,$currentScore = 0)
 		$result = 26931190829 + 100000000000 * $part;
 	}
 	else { 
-        throw new Exception ($olc-lang["err"],111);
+        throw new Exception ($olclang["err"],111);
     }
 
 	return ($result - $currentScore);
@@ -45,26 +46,27 @@ switch ($_GET["calct"]) {
 <!DOCTYPE html>
 <html>
 <head>
-<title><? echo $olc-lang["title"]; ?></title>
+<title><? echo $olclang["title"]; ?></title>
 <link href="stylev2.css" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div align="center" id="select"><a href="/"><? echo $olc-lang["ab-home"]; ?></a> <a href="#classicmode"><? echo $olc-lang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><? echo $olc-lang["ab-cl"]; ?></a></div>
+<div align="center" id="select"><a href="/"><? echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><? echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><? echo $olclang["ab-top"]; ?></a></div>
     <?
 switch (isset($_GET["calct"])) {
     case 'true':
     switch ($_GET["calct"]) {
-    case 'api': echo $olc-lang["api-res"];
+    case 'api': echo $olclang["api-res"];
     require 'form.html';
     include 'footer.html'; break;
-    case 'cl':  echo $olc-lang["cl-res"];
+    case 'cl':  echo $olclang["cl-res"];
     require 'form.html';
     include 'footer.html'; break;
-    default: echo '<div class="txt">' . $olc-lang["err-2"] . '</div><br>';
+    default: echo '<div class="txt">' . $olclang["err-2"] . '</div><br>';
     require 'form.html';
     include 'footer.html'; break;
     }   break;
-    default: echo '<h1>' . $olc-lang["title"] . '</h1>';
+    default: echo '<h1>' . $olclang["title"] . '</h1>';
     require 'form.html';
     echo '<br><br>';
     include 'footer.html'; break;

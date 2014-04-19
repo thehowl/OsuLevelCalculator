@@ -1,8 +1,10 @@
 <form action="index.php" method="get">
-    <span class="txt"><? echo $olc-lang["ins-nick"]; ?></span> <input type="text" name="nickname" autocomplete="off" placeholder="<? echo $olc-lang["example"] ?> WubWoofWolf" class="submit"><br><span class="txt"><? echo $olc-lang["mode"]; ?> <input type="radio" name="mode" value="0">osu! standard <input type="radio" name="mode" value="1">Taiko <input type="radio" name="mode" value="2">Catch the Beat  <input type="radio" name="mode" value="3">osu!mania</span><br><span class="txt"><? echo $lang["then"] ?> </span> <input type="hidden" value="api" name="calct"> <button type="submit"><? echo $olc-lang["submit"]; ?></button>
+    <span class="txt"><? echo $olclang["ins-nick"]; ?></span> <input type="text" name="nickname" autocomplete="off" placeholder="<? echo $olclang["example"] ?> WubWoofWolf" class="submit"><br>
+    <span class="txt"><? echo $olclang["mode"]; ?> <input type="radio" name="mode" value="0">osu! standard <input type="radio" name="mode" value="1">Taiko <input type="radio" name="mode" value="2">Catch the Beat  <input type="radio" name="mode" value="3">osu!mania</span><br>
+    <span class="txt"><? echo $olclang["then"] ?> </span> <input type="hidden" value="api" name="calct"> <button type="submit"><? echo $olclang["submit"]; ?></button>
 </form><br><br><br><br>
 <!-- Classic. -->
-<h1 id="classicmode"><? echo $olc-lang["cl-md"]; ?></h1>
+<h1 id="classicmode"><? echo $olclang["cl-md"]; ?></h1>
 <form action="index.php" method="get">
-<div class="txt"><? echo $olc-lang["cl-tt"] ?> <input type="text" name="leveltoreach" autocomplete="off" placeholder="Ex. 82" class="submit"> <input type="hidden" value="cl" name="calct"> <button type="submit">submit!</button></div> 
+<div class="txt"><? echo $olclang["cl-tt"] ?> <input type="text" name="leveltoreach" autocomplete="off" placeholder="Ex. 82" class="submit"> <input type="hidden" value="cl" name="calct"> <button type="submit"><? echo $olclang["submit"]; ?></button></div> 
 </form>
