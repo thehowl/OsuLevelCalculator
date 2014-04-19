@@ -12,7 +12,7 @@ $olc-lang["ab-top"] = "discussione";
 $olc-lang["footer"] = "versione 1.3 <br>Completamente creato da TheHowl<br>Tutto ciò che ti serve sapere su o!lc può essere trovato nella discussione (link in alto al sito)";
 $olc-lang["err"] = "Cazzo, questo è un errore. Per favore, scrivi cos'è successo negli issues della repository github";
 $olc-lang["title"] = "osu! level calculator"; // only lowercase in the title, please. Expecially for "osu!".
-$olc-lang["err2"] = "error";
+$olc-lang["err2"] = "errore";
 $olc-lang["cl-md"] = "Modalità classica";
 $olc-lang["footer-ttl"] = "Footer";
 

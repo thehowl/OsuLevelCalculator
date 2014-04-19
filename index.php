@@ -28,7 +28,7 @@ function ScoreLevelCalculator ($level,$currentScore = 0)
 		$result = 26931190829 + 100000000000 * $part;
 	}
 	else { 
-        throw new Exception ("Holy shit, this is an error. Please write more info in the issues",111);
+        throw new Exception ($olc-lang["err"],111);
     }
 
 	return ($result - $currentScore);
@@ -45,26 +45,26 @@ switch ($_GET["calct"]) {
 <!DOCTYPE html>
 <html>
 <head>
-<title>osu! level calculator</title>
+<title><? echo $olc-lang["title"]; ?></title>
 <link href="stylev2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div align="center" id="select"><a href="/">home</a> <a href="#classicmode">classic</a> <a href="http://osu.ppy.sh/forum/t/199230/start=0">topic</a></div>
+<div align="center" id="select"><a href="/"><? echo $olc-lang["ab-home"]; ?></a> <a href="#classicmode"><? echo $olc-lang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><? echo $olc-lang["ab-cl"]; ?></a></div>
     <?
 switch (isset($_GET["calct"])) {
     case 'true':
     switch ($_GET["calct"]) {
-    case 'api': echo '<h1>Results</h1> <div class="txt">So, how much score needs ' . $_GET["nickname"] . ' to reach the next level?</div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
+    case 'api': echo $olc-lang["api-res"];
     require 'form.html';
     include 'footer.html'; break;
-    case 'cl':  echo '<h1>Results</h1><div class="txt">So, to reach level ' . $_GET["leveltoreach"] . ', you need a score of </div><br><div class="result">' . $final . '</div><br><div class="txt">do it again!</div><br>';
+    case 'cl':  echo $olc-lang["cl-res"];
     require 'form.html';
     include 'footer.html'; break;
-    default: echo '<div class="txt">error</div><br>';
+    default: echo '<div class="txt">' . $olc-lang["err-2"] . '</div><br>';
     require 'form.html';
     include 'footer.html'; break;
     }   break;
-    default: echo '<h1>osu! level calculator</h1>';
+    default: echo '<h1>' . $olc-lang["title"] . '</h1>';
     require 'form.html';
     echo '<br><br>';
     include 'footer.html'; break;
