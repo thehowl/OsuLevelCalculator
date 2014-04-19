@@ -39,8 +39,8 @@ switch ($_GET["calct"]) {
 	$json = file_get_contents($query);
 	$data = json_decode($json);
 	$actlvl = round($data[0]->level) + 1;
-    $final = number_format(round(ScoreLevelCalculator ($actlvl,$data[0]->total_score))); break;
-    case 'cl': $final = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
+    $thefinalresult = number_format(round(ScoreLevelCalculator ($actlvl,$data[0]->total_score))); break;
+    case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
 }
 ?>
 <!DOCTYPE html>
@@ -56,10 +56,10 @@ switch ($_GET["calct"]) {
 switch (isset($_GET["calct"])) {
     case 'true':
     switch ($_GET["calct"]) {
-    case 'api': echo $olclang["api-res"];
+    case 'api': echo $olclang["api-res"] . $thefinalresult . $olclang["dia"];
     require 'form.html';
     include 'footer.html'; break;
-    case 'cl':  echo $olclang["cl-res"];
+    case 'cl':  echo $olclang["cl-res"] . $thefinalresult . $olclang["dia"];
     require 'form.html';
     include 'footer.html'; break;
     default: echo '<div class="txt">' . $olclang["err-2"] . '</div><br>';
