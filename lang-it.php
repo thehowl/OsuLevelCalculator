@@ -27,5 +27,5 @@ $olclang["cl-tt"] = "scrivi il livello da raggiungere";
 // Results
 $olclang["api-res"] = '<h1>Risultati</h1> <div class="txt">Quindi, quanto score necessita ' . $_GET["nickname"] . ' per raggiungere il prossimo livello?</div><br><div class="result">'; // obv don't change vars and html tags
 $olclang["dia"] = '</div><br><div class="txt">fallo di nuovo!</div><br>';
-$olclang["cl-res"] = '<h1>Results</h1><div class="txt">Quindi, per arrivare al livello ' . $_GET["leveltoreach"] . ', &egrave; necessario uno score di </div><br><div class="result">';
+$olclang["cl-res"] = '<h1>Risultati</h1><div class="txt">Quindi, per arrivare al livello ' . $_GET["leveltoreach"] . ', &egrave; necessario uno score di </div><br><div class="result">';
 ?>
