@@ -51,7 +51,7 @@ switch ($_GET["calct"]) {
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div align="center" id="select"><a href="/"><? echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><? echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><? echo $olclang["ab-top"]; ?></a></div>
+<div align="center" id="select"><a href="/"><? echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><? echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><? echo $olclang["ab-top"]; ?></a> <a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a></div>
     <?
 switch (isset($_GET["calct"])) {
     case 'true':
