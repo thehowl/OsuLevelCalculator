@@ -1,4 +1,4 @@
-<?
+<?php
 header ('Content-type: text/html; charset=utf-8');
 $brlang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
 if(file_exists("lang-" . $brlang . ".php")) {
@@ -46,13 +46,13 @@ switch ($_GET["calct"]) {
 <!DOCTYPE html>
 <html>
 <head>
-<title><? echo $olclang["title"]; ?></title>
+<title><?php echo $olclang["title"]; ?></title>
 <link href="stylev2.css" rel="stylesheet" type="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<div align="center" id="select"><a href="/"><? echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><? echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><? echo $olclang["ab-top"]; ?></a> <a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a></div>
-    <?
+<div align="center" id="select"><a href="/"><?php echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><?php echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><?php echo $olclang["ab-top"]; ?></a> <a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a></div>
+    <?php
 switch (isset($_GET["calct"])) {
     case 'true':
     switch ($_GET["calct"]) {
