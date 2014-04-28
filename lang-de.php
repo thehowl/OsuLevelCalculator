@@ -1,4 +1,4 @@
-<?
+<?php
 // German Language Source File
 // Translation made by givenameplz
 $olclang = array();

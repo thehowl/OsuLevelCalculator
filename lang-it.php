@@ -1,4 +1,4 @@
-<?
+<?php
 // Traduzione italiana di osu! level calculator
 // Sempre fatta da TheHowl
 
