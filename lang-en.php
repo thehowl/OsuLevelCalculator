@@ -2,7 +2,7 @@
 // English Language Source File
 // Made by TheHowl
 // A warning to translators: if you don't know the language, DON'T TRANSLATE IT. It may looks obvious, but I know a lot of project translated with Google translator and in that things, every time you are in front of the screen saying "What?" all the time.
-$olclang = array(); // DON'T CHANGE. NEVER.
+$olclang = array();
 
 // Home and general things
 $olclang["ab-home"] = "home";
