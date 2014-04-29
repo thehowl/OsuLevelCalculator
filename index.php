@@ -1,11 +1,11 @@
 <?php
 header ('Content-type: text/html; charset=utf-8');
 $brlang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
-if(file_exists("lang-" . $brlang . ".php")) {
-    include "lang-" . $brlang . ".php";
+if(file_exists("olclangs/" . $brlang . ".php")) {
+    include "olclangs/" . $brlang . ".php";
 }
 else {
-    include "lang-en.php";
+    include "olclangs/en.php";
 }
 $apikey = "API KEY HERE"; // This is holy shit damn important. To make everything work, edit this as the page of the wiki "API key" says of the repo of osu! level calculator
 // Thanks to pizza kun for the function
