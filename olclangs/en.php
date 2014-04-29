@@ -16,6 +16,9 @@ $olclang["title"] = "osu! level calculator"; // only lowercase in the title, ple
 $olclang["err2"] = "error";
 $olclang["cl-md"] = "Classic mode";
 $olclang["footer-ttl"] = "Footer";
+$olclang["tran-cred"] = " "; // Nothing in here, but it should be in english like this:
+// "<br>[lang] (ex. English) by <a href=\"http://osu.ppy.sh/u/yourosunickname\">yourosunickname</a>."
+// Obv, change [lang] (ex. English) and DO NOT DELETE THE \. They are needed to avoid problems with the php and ".
 
 // Form
 $olclang["example"] = "Ex."; // Abbreviation of Example

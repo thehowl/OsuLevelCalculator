@@ -13,6 +13,7 @@ $olclang["title"] = "osu! levelrechner";
 $olclang["err2"] = "Fehler";
 $olclang["cl-md"] = "Klassischer Modus";
 $olclang["footer-ttl"] = "Fußzeile";
+$olclang["tran-cred"] = "<br>German translation by <a href=\"http://osu.ppy.sh/u/givenameplz\">givenameplz</a>.";
 
 // Form
 $olclang["example"] = "Bsp.";

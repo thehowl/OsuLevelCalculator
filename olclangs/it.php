@@ -15,6 +15,7 @@ $olclang["title"] = "osu! level calculator"; // only lowercase in the title, ple
 $olclang["err2"] = "errore";
 $olclang["cl-md"] = "Modalità classica";
 $olclang["footer-ttl"] = "Footer";
+$olclang["tran-cred"] = "<br>Traduzione italiana by <a href=\"http://osu.ppy.sh/u/TheHowl\">TheHowl</a>.";
 
 // Form
 $olclang["example"] = "Es."; // Abbreviation of Example

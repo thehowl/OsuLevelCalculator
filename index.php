@@ -42,13 +42,6 @@ switch ($_GET["calct"]) {
     $thefinalresult = number_format(round(ScoreLevelCalculator ($actlvl,$data[0]->total_score))); break;
     case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
 }
-// Translators credits
-switch ($brlangs) {
-    case "it": $trcr = "<br>Traduzione italiana by <a href=\"http://osu.ppy.sh/u/TheHowl\">TheHowl</a>."; break;
-    case "de": $trcr = "<br>German translation by <a href=\"http://osu.ppy.sh/u/givenameplz\">givenameplz</a>."; break;
-    case "pl": $trcr = "<br>Polish translation by <a href=\"http://osu.ppy.sh/u/DarkStoorM\">DarkStoorM</a>."; break;
-    default: $trcr = " "; break;
-}
 ?>
 <!DOCTYPE html>
 <html>
