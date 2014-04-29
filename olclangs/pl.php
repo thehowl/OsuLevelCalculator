@@ -13,7 +13,7 @@ $olclang["title"] = "kalkulator poziomu osu!";
 $olclang["err2"] = "błąd";
 $olclang["cl-md"] = "Tryb klasyczny";
 $olclang["footer-ttl"] = "Stopka"; 
-$olclang["tran-cred"] = "<br>Polish translation by <a href=\"http://osu.ppy.sh/u/DarkStoorM\">DarkStoorM</a>.";
+$olclang["tran-cred"] = "<br>Polskie tłumaczenie: <a href=\"http://osu.ppy.sh/u/DarkStoorM\">DarkStoorM</a>.";
 
 // Form
 $olclang["example"] = "Np.";
