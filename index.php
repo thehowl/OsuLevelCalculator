@@ -17,9 +17,8 @@ function ScoreLevelCalculator ($level,$currentScore = 0)
 		{
 			$part = 4 * bcpow($level, 3, 0) - 3 * bcpow($level, 2, 0) - $level;
 			$result = 5000 / 3 * $part + 1.25 * bcpow(1.8, $level - 60, 0);
-            $sbps = "true";
 		}
-		else
+		elseif ($level = 0 || $level = 1)
 		{ 
 			$result = 0;
 		}
@@ -53,8 +52,13 @@ switch ($_GET["calct"]) {
 </head>
 <body>
 <?php
-    if ($thefinalresult == 0 && $sbps != "true" && isset($_GET["calct"])) {
-    echo '<div class="omgerr"><p align="center">' . $olclang["errcl"] . '</p></div>';
+    if ($thefinalresult == 0 && isset($_GET["calct"])) {
+        if (is_numeric($_GET["leveltoreach"]) && isset($_GET["leveltoreach"])) {
+            echo ' ';
+        }
+        else {
+            echo '<div class="omgerr"><p align="center">' . $olclang["errcl"] . '</p></div>';
+        }
     }
 ?>
 <div align="center" id="select"><a href="/"><?php echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><?php echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><?php echo $olclang["ab-top"]; ?></a> <a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a></div>
