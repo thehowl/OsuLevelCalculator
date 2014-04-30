@@ -7,14 +7,14 @@ $olclang = array();
 $olclang["ab-home"] = "startseite";
 $olclang["ab-cl"] = "klassisch";
 $olclang["ab-top"] = "forum";
-$olclang["footer"] = "Version 1.3<br>Ausschließlich von TheHowl erstellt<br>alle Informationen die Sie benötigten können im Forum gefunden werden (Link im oberen Teil der Seite) "; 
+$olclang["footer"] = "Version 1.3<br>Vollständig von TheHowl erstellt<br>alle Informationen die Sie benötigten können im Forum gefunden werden (Link im oberen Teil der Seite) "; 
 $olclang["err"] = "Ach du Schande, ein Fehler. Bitte melden Sie das Problem!";
 $olclang["title"] = "osu! levelrechner";
 $olclang["err2"] = "Fehler";
 $olclang["cl-md"] = "Klassischer Modus";
 $olclang["footer-ttl"] = "Fußzeile";
 $olclang["tran-cred"] = "<br>Deutsche Übersetzung von <a href=\"http://osu.ppy.sh/u/947499\">givenameplz</a>.";
-$olclang["errcl"] = "Error. Yup, text isn't a valid level, or that user doesn't exists. Congratulations for seeing this error!<br>Didn't expect this error? <a href=\"http://thehowl.it/reportolc.html\"><b>Report this.</b></a>";
+$olclang["errcl"] = "Fehler. Nun ja, entweder die Eingabe ist kein gültiger Level, oder der Benutzer existiert nicht. Glückwunsch dass Sie diesen Fehler gefunden haben!<br>Ein Unerwarteter Fehler? <a href=\"http://thehowl.it/reportolc.html\"><b>Fehler melden.</b></a>";
 
 // Form
 $olclang["example"] = "Bsp.";
