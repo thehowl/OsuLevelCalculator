@@ -8,7 +8,7 @@ $olclang = array();
 $olclang["ab-home"] = "home";
 $olclang["ab-cl"] = "classic";
 $olclang["ab-top"] = "topic";
-$olclang["footer"] = "version 1.3 <br>Completely made by TheHowl<br>All the info you need about this can be found in the topic (link on the top of the page)";
+$olclang["footer"] = "version 1.3 <br>made by TheHowl<br>All the info you need about this can be found in the topic (link on the top of the page)";
 $olclang["err"] = "Holy shit, this is an error. Please write more info in the issues";
 $olclang["title"] = "osu! level calculator"; // only lowercase in the title, please. Expecially for "osu!". Plus, please translate this only in:
 // - Languages that heve they very own alphabet (asiatic languages...)
