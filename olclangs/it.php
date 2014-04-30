@@ -16,6 +16,7 @@ $olclang["err2"] = "errore";
 $olclang["cl-md"] = "Modalità classica";
 $olclang["footer-ttl"] = "Footer";
 $olclang["tran-cred"] = "<br>Traduzione italiana by <a href=\"http://osu.ppy.sh/u/TheHowl\">TheHowl</a>.";
+$olclang["errcl"] = "Errore. Già, le lettere non sono numeri, o quel determinato utente non esiste. Congratulazioni per aver visto quest'errore!<br>Qualquadra non cosa? <a href=\"http://thehowl.it/reportolc.html\"><b>Informaci.</b></a>";
 
 // Form
 $olclang["example"] = "Es."; // Abbreviation of Example

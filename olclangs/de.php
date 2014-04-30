@@ -14,6 +14,7 @@ $olclang["err2"] = "Fehler";
 $olclang["cl-md"] = "Klassischer Modus";
 $olclang["footer-ttl"] = "Fußzeile";
 $olclang["tran-cred"] = "<br>Deutsche Übersetzung von <a href=\"http://osu.ppy.sh/u/947499\">givenameplz</a>.";
+$olclang["errcl"] = "Error. Yup, text isn't a valid level, or that user doesn't exists. Congratulations for seeing this error!<br>Didn't expect this error? <a href=\"http://thehowl.it/reportolc.html\"><b>Report this.</b></a>";
 
 // Form
 $olclang["example"] = "Bsp.";

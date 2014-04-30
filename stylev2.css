@@ -7,11 +7,21 @@ Completely re-made from stroke by thehowl */
   src: url("segoeuil.ttf") format("truetype");
 }
 
+/* Omaigad errors. */
+.omgerr {
+    background: #f24511;
+    color: #FFF;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 0 auto;
+    width: 100%;
+}
 /* BODY AND TITLES */
 body {
     background: #FFF;
     color: #222;
     font-family: "Segoe UI Light";
+    margin: 0;
 }
 
 h1 {
