@@ -12,6 +12,4 @@ Things to do
 Things that YOU can do!
 -----------------------
 
-Hey, do you well know a language that isn't italian or english? If yes, you can help!
-
-Please, fork this repo and create a file called lang-thenameofyourlanguageintwoletters.php, then make a pull request with the translation from the english language so that everyone can enjoy your translation!
+[Hey you, you can translate this project!](https://github.com/TheHowl/OsuLevelCalculator/wiki/Translating)
