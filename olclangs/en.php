@@ -19,7 +19,7 @@ $olclang["footer-ttl"] = "Footer";
 $olclang["tran-cred"] = " "; // Nothing in here, but it should be in english like this:
 // "<br>[lang] (ex. English) by <a href=\"http://osu.ppy.sh/u/yourosunickname\">yourosunickname</a>."
 // Obv, change [lang] (ex. English) and DO NOT DELETE THE \. They are needed to avoid problems with the php and ".
-$olclang["errcl"] = "Error. Yup, text isn't a valid level, or that user doesn't exists. Congratulations for seeing this error!<br>Didn't expect this error? <a href=\"http://thehowl.it/reportolc.html\"><b>Report this.</b></a>";
+$olclang["errcl"] = "An error occured: Yup, text isn't a valid level, or that user doesn't exists. Please report it <a href=\"http://thehowl.it/reportolc.html\"><b>Here.</b></a>";
 
 // Form
 $olclang["example"] = "Ex."; // Abbreviation of Example

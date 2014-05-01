@@ -1,6 +1,6 @@
 <?php
 // Polish Language Source File
-// Translated by DarkstoorM
+// Translated by DarkStoorM
 $olclang = array();
 
 // Home and general things
@@ -14,7 +14,7 @@ $olclang["err2"] = "błąd";
 $olclang["cl-md"] = "Tryb klasyczny";
 $olclang["footer-ttl"] = "Stopka"; 
 $olclang["tran-cred"] = "<br>Polskie tłumaczenie: <a href=\"http://osu.ppy.sh/u/DarkStoorM\">DarkStoorM</a>.";
-$olclang["errcl"] = "Błąd. Podany tekst dla poziomu nie jest liczbą, lub użytkownik nie istnieje. Gratulacje za zauważenie tego błędu!<br>Nie spodziewałeś się tego błędu? <a href=\"http://thehowl.it/reportolc.html\"><b>Zgłoś go.</b></a>";
+$olclang["errcl"] = "Wystąpił błąd: Podano nieprawidłową wartość poziomu, lub użytkownik nie istnieje. Proszę zgłosić go <a href=\"http://thehowl.it/reportolc.html\"><b>Tutaj.</b></a>";
 
 // Form
 $olclang["example"] = "Np.";
