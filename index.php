@@ -35,7 +35,7 @@ function ScoreLevelCalculator ($level,$currentScore = 0)
 	return ($result - $currentScore);
 }
 switch ($_GET["calct"]) {
-    case 'api': $query = "https://osu.ppy.sh/api/get_user?k=" . $apikey . "&u=" . $_GET["nickname"] . "&m=" . $_GET["mode"];
+    case 'api': $query = "https://osu.ppy.sh/api/get_user?k=" . $apikey . "&u=" . $_GET["nickname"] . "&m=" . $_GET["mode"] . "&type=string";
 	$json = file_get_contents($query);
 	$data = json_decode($json);
 	$actlvl = round($data[0]->level) + 1;
