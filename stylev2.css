@@ -82,6 +82,11 @@ button {
     background: #f7f7f7;
     font-family: "Segoe UI Light";
     font-size: 15pt;
-    width: 400px;
     border: 0;
+}
+.submit .api {
+    width: 400px;
+}
+.submit .cl {
+    width: 100px;
 }
