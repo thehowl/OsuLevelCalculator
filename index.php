@@ -48,8 +48,11 @@ switch ($_GET["calct"]) {
     $thefinalresult = number_format(round(ScoreLevelCalculator ($xlvl,$data[0]->total_score))); break;
     case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
 }
-if ($thefinalresult == 0 && isset($_GET["calct"]) && !is_numeric($_GET["leveltoreach"]) && !isset($_GET["leveltoreach"])) {
-            $error = $olclang["errcl"];
+if ($thefinalresult == 0 && isset($_GET["calct"])) {
+    if (is_numeric($_GET["leveltoreach"]) && isset($_GET["leveltoreach"])) {}
+    else {
+        $error = $olclang["errcl"];
+    }
     }
 ?>
 <!DOCTYPE html>
