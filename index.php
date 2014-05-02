@@ -62,7 +62,7 @@ if ($thefinalresult == 0 && isset($_GET["calct"]) && !is_numeric($_GET["leveltor
 <body>
 <?php
     if (isset($error)) {
-        echo '<div class="omgerr"><p align="center">' . $olclang["errcl"] . '</p></div>'
+        echo '<div class="omgerr"><p align="center">' . $olclang["errcl"] . '</p></div>';
     }
 ?>
 <div align="center" id="select"><a href="/"><?php echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><?php echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><?php echo $olclang["ab-top"]; ?></a> <a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a></div>
