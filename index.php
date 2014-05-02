@@ -48,6 +48,9 @@ switch ($_GET["calct"]) {
     $thefinalresult = number_format(round(ScoreLevelCalculator ($xlvl,$data[0]->total_score))); break;
     case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
 }
+if ($thefinalresult == 0 && isset($_GET["calct"]) && !is_numeric($_GET["leveltoreach"]) && !isset($_GET["leveltoreach"])) {
+            $error = $olclang["errcl"];
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,13 +61,8 @@ switch ($_GET["calct"]) {
 </head>
 <body>
 <?php
-    if ($thefinalresult == 0 && isset($_GET["calct"])) {
-        if (is_numeric($_GET["leveltoreach"]) && isset($_GET["leveltoreach"])) {
-            echo ' ';
-        }
-        else {
-            echo '<div class="omgerr"><p align="center">' . $olclang["errcl"] . '</p></div>';
-        }
+    if (isset($error)) {
+        echo '<div class="omgerr"><p align="center">' . $olclang["errcl"] . '</p></div>'
     }
 ?>
 <div align="center" id="select"><a href="/"><?php echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><?php echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><?php echo $olclang["ab-top"]; ?></a> <a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a></div>
