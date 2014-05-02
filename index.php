@@ -70,7 +70,7 @@ if ($thefinalresult == 0 && isset($_GET["calct"]) && !is_numeric($_GET["leveltor
 switch (isset($_GET["calct"])) {
     case 'true':
     switch ($_GET["calct"]) {
-    case 'api': echo $olclang["api-res"] . $thefinalresult . $olclang["dia"];
+    case 'api': echo $olclang["api-res"] . $xlvl . $olclang["api-res2"] . $thefinalresult . $olclang["dia"];
     require 'form.html';
     include 'footer.html'; break;
     case 'cl':  echo $olclang["cl-res"] . $thefinalresult . $olclang["dia"];

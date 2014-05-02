@@ -26,7 +26,8 @@ $olclang["cl-tt"] = "podaj poziom, który chcesz osiągnąć";
 $olclang["targ-lv"] = "docelowy poziom";
 
 // Results
-$olclang["api-res"] = '<h1>Wyniki</h1> <div class="txt">Ile punktów ' . $_GET["nickname"] . ' potrzebuje, by zdobyć następny poziom?</div><br><div class="result">';
+$olclang["api-res"] = '<h1>Results</h1> <div class="txt">So, how much score needs ' . $_GET["nickname"] . ' to reach level ';
+$olclang["api-res2"] = '?</div><br><div class="result">';
 $olclang["dia"] = '</div><br><div class="txt">policz jeszcze raz!</div><br>';
 $olclang["cl-res"] = '<h1>Wyniki</h1><div class="txt">By osiągnąć ' . $_GET["leveltoreach"] . ' poziom, potrzebujesz następującą ilość punktów </div><br><div class="result">';
 ?>

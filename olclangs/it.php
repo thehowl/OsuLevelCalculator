@@ -1,9 +1,7 @@
 <?php
 // Traduzione italiana di osu! level calculator
 // Sempre fatta da TheHowl
-
-// A warning to translators: if you don't know the language, DON'T TRANSLATE IT. It may looks obvious, but I know a lot of project translated with Google translator and in that things, every time you are in front of the screen saying "What?" all the time.
-$olclang = array(); // DON'T CHANGE. NEVER.
+$olclang = array();
 
 // Home and general things
 $olclang["ab-home"] = "home";
@@ -28,7 +26,8 @@ $olclang["cl-tt"] = "scrivi il livello da raggiungere";
 $olclang["targ-lv"] = "Obiettivo";
 
 // Results
-$olclang["api-res"] = '<h1>Risultati</h1> <div class="txt">Quindi, quanto score necessita ' . $_GET["nickname"] . ' per raggiungere il prossimo livello?</div><br><div class="result">'; // obv don't change vars and html tags
+$olclang["api-res"] = '<h1>Results</h1> <div class="txt">So, how much score needs ' . $_GET["nickname"] . ' to reach level ';
+$olclang["api-res2"] = '?</div><br><div class="result">';
 $olclang["dia"] = '</div><br><div class="txt">fallo di nuovo!</div><br>';
 $olclang["cl-res"] = '<h1>Risultati</h1><div class="txt">Quindi, per arrivare al livello ' . $_GET["leveltoreach"] . ', &egrave; necessario uno score di </div><br><div class="result">';
 ?>
