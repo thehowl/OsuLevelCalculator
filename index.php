@@ -35,11 +35,17 @@ function ScoreLevelCalculator ($level,$currentScore = 0)
 	return ($result - $currentScore);
 }
 switch ($_GET["calct"]) {
-    case 'api': $query = "https://osu.ppy.sh/api/get_user?k=" . $apikey . "&u=" . $_GET["nickname"] . "&m=" . $_GET["mode"] . "&type=string";
-	$json = file_get_contents($query);
-	$data = json_decode($json);
-	$actlvl = round($data[0]->level) + 1;
-    $thefinalresult = number_format(round(ScoreLevelCalculator ($actlvl,$data[0]->total_score))); break;
+    case 'api':
+    $query = "https://osu.ppy.sh/api/get_user?k=" . $apikey . "&u=" . $_GET["nickname"] . "&m=" . $_GET["mode"] . "&type=string";
+    $json = file_get_contents($query);
+    $data = json_decode($json);
+    if ($_GET["targlv"] != "") {
+        $xlvl = $_GET["targlv"];
+    }
+    else {
+        $xlvl = round($data[0]->level) + 1;
+    }
+    $thefinalresult = number_format(round(ScoreLevelCalculator ($xlvl,$data[0]->total_score))); break;
     case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
 }
 ?>

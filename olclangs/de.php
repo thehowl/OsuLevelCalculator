@@ -23,6 +23,7 @@ $olclang["mode"] = "Modus";
 $olclang["then"] = "und dann";
 $olclang["submit"] = "Berechnen!";
 $olclang["cl-tt"] = "Gewünschten Level eingeben";
+$olclang["targ-lv"] = "target level";
 
 // Results
 $olclang["api-res"] = '<h1>Ergebnis</h1> <div class="txt">Wie viele Punkte braucht ' . $_GET["nickname"] . ' um den nächsten Level zu erreichen?</div><br><div class="result">';

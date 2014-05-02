@@ -28,6 +28,7 @@ $olclang["mode"] = "mode";
 $olclang["then"] = "and then";
 $olclang["submit"] = "submit!";
 $olclang["cl-tt"] = "write the level you want to reach"; 
+$olclang["targ-lv"] = "target level";
 
 // Results
 $olclang["api-res"] = '<h1>Results</h1> <div class="txt">So, how much score needs ' . $_GET["nickname"] . ' to reach the next level?</div><br><div class="result">'; // obv don't change vars and html tags

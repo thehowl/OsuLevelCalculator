@@ -24,7 +24,8 @@ $olclang["insnick"] = "inserisci il nickname";
 $olclang["mode"] = "modalit&agrave;";
 $olclang["then"] = "e poi";
 $olclang["submit"] = "invia!";
-$olclang["cl-tt"] = "scrivi il livello da raggiungere"; 
+$olclang["cl-tt"] = "scrivi il livello da raggiungere";
+$olclang["targ-lv"] = "Obiettivo";
 
 // Results
 $olclang["api-res"] = '<h1>Risultati</h1> <div class="txt">Quindi, quanto score necessita ' . $_GET["nickname"] . ' per raggiungere il prossimo livello?</div><br><div class="result">'; // obv don't change vars and html tags

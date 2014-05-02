@@ -22,7 +22,8 @@ $olclang["insnick"] = "podaj nick";
 $olclang["mode"] = "tryb";
 $olclang["then"] = "a następnie";
 $olclang["submit"] = "wyślij!";
-$olclang["cl-tt"] = "podaj poziom, który chcesz osiągnąć"; 
+$olclang["cl-tt"] = "podaj poziom, który chcesz osiągnąć";
+$olclang["targ-lv"] = "target level";
 
 // Results
 $olclang["api-res"] = '<h1>Wyniki</h1> <div class="txt">Ile punktów ' . $_GET["nickname"] . ' potrzebuje, by zdobyć następny poziom?</div><br><div class="result">';
