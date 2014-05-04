@@ -38,6 +38,10 @@ h1 {
     font-size: 15pt;
 }
 
+.txt:last-child {
+    padding-bottom: 9px;
+}
+
 #select {
     text-transform: uppercase;
     font-size: 43pt;
