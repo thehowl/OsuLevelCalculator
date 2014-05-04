@@ -61,6 +61,8 @@ if ($thefinalresult == 0 && isset($_GET["calct"])) {
 <title><?php echo $olclang["title"]; ?></title>
 <link href="stylev2.css" rel="stylesheet" type="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="//s.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="icon" href="//s.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon">
 </head>
 <body>
 <?php
