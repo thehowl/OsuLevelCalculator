@@ -43,7 +43,7 @@ switch ($_GET["calct"]) {
         $xlvl = $_GET["targlv"];
     }
     else {
-        $xlvl = round($data[0]->level) + 1;
+         $xlvl = floor($data[0]->level) + 1;;
     }
     $thefinalresult = number_format(round(ScoreLevelCalculator ($xlvl,$data[0]->total_score))); break;
     case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
