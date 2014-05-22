@@ -7,8 +7,8 @@ $olclang = array();
 // Home and general things
 $olclang["ab-home"] = "Accueil";
 $olclang["ab-cl"] = "classique";
-$olclang["ab-top"] = "sujet";
-$olclang["footer"] = "version 1.3 <br>réalisé par TheHowl<br>Toutes les informations que vous avez besoin pevent être trouvées sur ce sujet (lien en haut de la page)";
+$olclang["ab-top"] = "topic";
+$olclang["footer"] = "version 1.3 <br>réalisé par TheHowl<br>Toutes les informations dont vous avez besoin pevent être trouvées sur le topic (lien en haut de la page)";
 $olclang["err"] = "Holy shit, c'est une erreur. Merci d'écrire plus d'informations dans les problèmes";
 $olclang["title"] = "osu! level calculator"; // only lowercase in the title, please. Expecially for "osu!". Plus, please translate this only in:
 // - Languages that heve they very own alphabet (asiatic languages...)
@@ -31,8 +31,8 @@ $olclang["cl-tt"] = "ecrivez le niveau que vous souhaitez atteindre";
 $olclang["targ-lv"] = "level souhaité";
 
 // Results
-$olclang["api-res"] = '<h1>Résultats</h1> <div class="txt">Alors, combien de score reste t\'il à ' . $_GET["nickname"] . ' pour atteindre le niveau ';
+$olclang["api-res"] = '<h1>Résultats</h1> <div class="txt">Alors, combien de score doit encore obtenir ' . $_GET["nickname"] . ' pour atteindre le niveau ';
 $olclang["api-res2"] = '?</div><br><div class="result">'; // obv don't change vars and html tags
 $olclang["dia"] = '</div><br><div class="txt">fais-le à nouveau!</div><br>';
-$olclang["cl-res"] = '<h1>Results</h1><div class="txt">Alors, pour atteindre le niveau ' . $_GET["leveltoreach"] . ', vous avez besoin d\'un score de </div><br><div class="result">';
+$olclang["cl-res"] = '<h1>Résultats</h1><div class="txt">Alors, pour atteindre le niveau ' . $_GET["leveltoreach"] . ', vous avez besoin d\'un score de </div><br><div class="result">';
 ?>
