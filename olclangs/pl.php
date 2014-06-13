@@ -35,6 +35,6 @@ $olclang["api-res2"] = '?</div><br><div class="result">';
 $olclang["dia"] = '</div><br><div class="txt">policz jeszcze raz!</div><br>';
 $olclang["cl-res"] = '<h1>Wyniki</h1><div class="txt">By osiągnąć ' . $_GET["leveltoreach"] . ' poziom, potrzebujesz następującą ilość punktów </div><br><div class="result">';
 // New part starts here [13/06/14]
-$olclang["s2l-res"] = '<h1>Results</h1><div class="txt">Różnica z poziomu ' . $_GET["l1"] . ' do ' . $_GET["l2"] . ' jest równa</div><br><div class="result">';
+$olclang["s2l-res"] = '<h1>Wyniki</h1><div class="txt">Różnica z poziomu ' . $_GET["l1"] . ' do ' . $_GET["l2"] . ' jest równa</div><br><div class="result">';
 $olclang["abs"] = '<div class="txt">Uwaga: powyższa wartość jest wartością bezwzględną!'; 
 ?>
