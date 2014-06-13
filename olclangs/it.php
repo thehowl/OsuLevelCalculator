@@ -15,6 +15,10 @@ $olclang["cl-md"] = "Modalità classica";
 $olclang["footer-ttl"] = "Footer";
 $olclang["tran-cred"] = "<br>Traduzione italiana by <a href=\"http://osu.ppy.sh/u/TheHowl\">TheHowl</a>.";
 $olclang["errcl"] = "Errore. Già, le lettere non sono numeri, o quel determinato utente non esiste. Congratulazioni per aver visto quest'errore!<br>Qualquadra non cosa? <a href=\"http://thehowl.it/reportolc.html\"><b>Informaci.</b></a>";
+// new
+$olclang["s2l-md"] = "Differenza di score tra due livelli";
+$olclang["s2l-tx1"] = "Calcola la differenza dello score tra il livello ";
+$olclang["s2l-tx2"] = "e il livello";
 
 // Form
 $olclang["example"] = "Es."; // Abbreviation of Example
@@ -30,4 +34,7 @@ $olclang["api-res"] = '<h1>Risultati</h1> <div class="txt">Quindi, quanto score 
 $olclang["api-res2"] = '?</div><br><div class="result">';
 $olclang["dia"] = '</div><br><div class="txt">fallo di nuovo!</div><br>';
 $olclang["cl-res"] = '<h1>Risultati</h1><div class="txt">Quindi, per arrivare al livello ' . $_GET["leveltoreach"] . ', &egrave; necessario uno score di </div><br><div class="result">';
+// New part starts here [13/06/14]
+$olclang["s2l-res"] = '<h1>Risultati</h1><div class="txt">La differenza di score dal livello ' . $_GET["l1"] . ' al livello ' . $_GET["l2"] . ' è di</div><br><div class="result">';
+$olclang["abs"] = '<div class="txt">Nota bene: il numero sovrastante è espresso nel suo valore assoluto!'; 
 ?>
