@@ -47,9 +47,13 @@ switch ($_GET["calct"]) {
     }
     $thefinalresult = number_format(round(ScoreLevelCalculator ($xlvl,$data[0]->total_score))); break;
     case 'cl': $thefinalresult = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;
+    case 's2l':
+    $ratsypart = ScoreLevelCalculator($_GET["l1"]) - ScoreLevelCalculator($_GET["l2"]);
+    $thefinalresult = number_format(abs(round($ratsypart))); break;
 }
 if ($thefinalresult == 0 && isset($_GET["calct"])) {
     if (is_numeric($_GET["leveltoreach"]) && isset($_GET["leveltoreach"])) {}
+    elseif (is_numeric($_GET["l1"]) && isset($_GET["l1"]) && is_numeric($_GET["l2"]) && isset($_GET["l2"])) {}
     else {
         $error = $olclang["errcl"];
     }
@@ -81,6 +85,11 @@ switch (isset($_GET["calct"])) {
     case 'cl':  echo $olclang["cl-res"] . $thefinalresult . $olclang["dia"];
     require 'form.html';
     include 'footer.html'; break;
+    case 's2l': 
+        echo $olclang["s2l-res"] . $thefinalresult . '</div><br>' . $olclang["abs"] . $olclang["dia"]; 
+        require 'form.html';
+        include 'footer.html'; 
+        break;
     default: echo '<div class="txt">' . $olclang["err-2"] . '</div><br>';
     require 'form.html';
     include 'footer.html'; break;

@@ -20,6 +20,11 @@ $olclang["tran-cred"] = " "; // Nothing in here, but it should be in english lik
 // "<br>[lang] (ex. English) by <a href=\"http://osu.ppy.sh/u/yourosunickname\">yourosunickname</a>."
 // Obv, change [lang] (ex. English) and DO NOT DELETE THE \. They are needed to avoid problems with the php and ".
 $olclang["errcl"] = "Error. Yup, text isn't a valid level, or that user doesn't exists. Congratulations for seeing this error!<br>Didn't expect this error? <a href=\"http://thehowl.it/reportolc.html\"><b>Report this.</b></a>";
+// New part starts here [11/06/14]
+$olclang["s2l-md"] = "Score difference between levels";
+$olclang["s2l-tx1"] = "Calculate the difference between level";
+$olclang["s2l-tx2"] = "and level";
+// Finishes here
 
 // Form
 $olclang["example"] = "Ex."; // Abbreviation of Example
@@ -35,4 +40,7 @@ $olclang["api-res"] = '<h1>Results</h1> <div class="txt">So, how much score need
 $olclang["api-res2"] = '?</div><br><div class="result">'; // obv don't change vars and html tags
 $olclang["dia"] = '</div><br><div class="txt">do it again!</div><br>';
 $olclang["cl-res"] = '<h1>Results</h1><div class="txt">So, to reach level ' . $_GET["leveltoreach"] . ', you need a score of </div><br><div class="result">';
+// New part starts here [13/06/14]
+$olclang["s2l-res"] = '<h1>Results</h1><div class="txt">The difference from ' . $_GET["l1"] . ' to ' . $_GET["l2"] . ' is of</div><br><div class="result">';
+$olclang["abs"] = '<div class="txt">Note: the number above is expessed in its absolute value!'; 
 ?>

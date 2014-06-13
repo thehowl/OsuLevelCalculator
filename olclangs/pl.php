@@ -15,6 +15,10 @@ $olclang["cl-md"] = "Tryb klasyczny";
 $olclang["footer-ttl"] = "Stopka"; 
 $olclang["tran-cred"] = "<br>Polskie tłumaczenie: <a href=\"http://osu.ppy.sh/u/DarkStoorM\">DarkStoorM</a>.";
 $olclang["errcl"] = "Błąd. Podany tekst dla poziomu nie jest liczbą, lub użytkownik nie istnieje. Gratulacje za zauważenie tego błędu!<br>Nie spodziewałeś się tego błędu? <a href=\"http://thehowl.it/reportolc.html\"><b>Zgłoś go.</b></a>";
+// new
+$olclang["s2l-md"] = "Score difference between levels";
+$olclang["s2l-tx1"] = "Calculate the difference between level";
+$olclang["s2l-tx2"] = "and level";
 
 // Form
 $olclang["example"] = "Np.";
@@ -30,4 +34,7 @@ $olclang["api-res"] = '<h1>Wyniki</h1> <div class="txt">Ile punktów ' . $_GET["
 $olclang["api-res2"] = '?</div><br><div class="result">';
 $olclang["dia"] = '</div><br><div class="txt">policz jeszcze raz!</div><br>';
 $olclang["cl-res"] = '<h1>Wyniki</h1><div class="txt">By osiągnąć ' . $_GET["leveltoreach"] . ' poziom, potrzebujesz następującą ilość punktów </div><br><div class="result">';
+// New part starts here [13/06/14]
+$olclang["s2l-res"] = '<h1>Results</h1><div class="txt">The difference from ' . $_GET["l1"] . ' to ' . $_GET["l2"] . ' is of</div><br><div class="result">';
+$olclang["abs"] = '<div class="txt">Note: the number above is expessed in its absolute value!'; 
 ?>
