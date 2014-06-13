@@ -42,5 +42,5 @@ $olclang["dia"] = '</div><br><div class="txt">do it again!</div><br>';
 $olclang["cl-res"] = '<h1>Results</h1><div class="txt">So, to reach level ' . $_GET["leveltoreach"] . ', you need a score of </div><br><div class="result">';
 // New part starts here [13/06/14]
 $olclang["s2l-res"] = '<h1>Results</h1><div class="txt">The difference from ' . $_GET["l1"] . ' to ' . $_GET["l2"] . ' is of</div><br><div class="result">';
-$olclang["abs"] = '<div class="txt">Note: the number above is expessed in its absolute value!'; 
+$olclang["abs"] = '<div class="txt">Note: the number above is expressed in its absolute value!'; 
 ?>
