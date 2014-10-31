@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{$olclang['title']}</title>
+	<link href="res/stylev2.css" rel="stylesheet" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="//s.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon">
+	<link rel="icon" href="//s.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon">
+</head>
+<body>
+	{if="isset($error)"}
+		<div class="omgerr"><p align="center">{$olclang['errcl']}</p></div>
+	{/if}
+	<div align="center" id="select">
+		<a href="/">{$olclang['ab-home']}</a> 
+		<a href="#classicmode">{$olclang['ab-cl']}</a>
+		<a href="http://osu.ppy.sh/forum/t/199230/start=0">{$olclang['ab-top']}</a>
+		<a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a>
+	</div>
+	{if="!isset($GETMIMIC.calct)"}
+		<h1>{$olclang['title']}</h1>
+	{else}
+		{if="$GETMIMIC.calct == 'api'"}
+			{$olclang['api-res']}{$xlvl}{$olclang['api-res2']}{$final}{$olclang['dia']}
+		{elseif="$GETMIMIC.calct == 'cl'"}
+			{$olclang['cl-res']}{$final}{$olclang['dia']}
+		{elseif="$GETMIMIC.calct == 's2l'"}
+			{$olclang['s2l-res']}{$final}</div><br>{$olclang['abs']}{$olclang['dia']}
+		{else}
+			<div class="txt">{$olclang['err-2']}</div><br>
+		{/if}
+	{/if}
+	<form action="index.php" method="get">
+    	<span class="txt">{$olclang['insnick']}</span> <input type="text" name="nickname" autocomplete="off" placeholder="{$olclang['example']} WubWoofWolf" class="submit api"><br>
+    	<span class="txt">
+    		{$olclang['mode']} 
+    		<input type="radio" name="mode" value="0">osu! standard 
+    		<input type="radio" name="mode" value="1">Taiko 
+    		<input type="radio" name="mode" value="2">Catch the Beat  
+    		<input type="radio" name="mode" value="3">osu!mania
+    	</span><br>
+    	<span class="txt">{$olclang['targ-lv']} 
+    		<input type="text" name="targlv" autocomplete="off" class="submit cl">
+    	</span><br>
+    	<span class="txt">
+    		{$olclang['then']}
+    	</span> 
+    	<input type="hidden" value="api" name="calct"> <button type="submit">{$olclang['submit']}</button>
+	</form><!-- random <br> tags because yes --><br><br><br><br>
+	<!-- Classic. -->
+	<h1 id="classicmode">{$olclang['cl-md']}</h1>
+	<form action="index.php" method="get">
+	<div class="txt">
+		{$olclang['cl-tt']} <input type="text" name="leveltoreach" autocomplete="off" placeholder="{$olclang['example']} 82" class="submit cl"> <input type="hidden" value="cl" name="calct"> <button type="submit">{$olclang['submit']}</button></div> 
+	</form><!-- random <br> tags because yes --><br><br><br><br>
+	<!-- s2l -->
+	<h1 id="s2lmode">{$olclang['s2l-md']}</h1>
+	<form action="index.php" method="get">
+		<div class="txt">
+			{$olclang['s2l-tx1']} 
+			<input type="text" name="l1" autocomplete="off" placeholder="{$olclang['example']} 82" class="submit cl">
+			{$olclang['s2l-tx2']} 
+			<input type="text" name="l2" autocomplete="off" placeholder="{$olclang['example']} 93" class="submit cl">
+			<input type="hidden" value="s2l" name="calct">
+			<button type="submit">{$olclang['submit']}</button>
+		</div> 
+	</form>
+	<h1>{$olclang['footer-ttl']}</h1>
+	<div class="txt">{$olclang['footer']}{$olclang['tran-cred']}</div>
+</body>
+</html>

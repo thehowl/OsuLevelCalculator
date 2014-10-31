@@ -1,6 +1,7 @@
 <?php
 require_once 'inc/functions.php';
 require_once 'inc/cfg.php';
+require_once 'inc/tpl.php';
 header('Content-type: text/html; charset=utf-8');
 if (!isset($olclang)) {
 	$olclang = getlang();
@@ -33,48 +34,11 @@ if (isset($final) && $final == 0 && isset($_GET["calct"])) {
 				$error = $olclang["errcl"];
 			}
 		}
-		?>
-		<!DOCTYPE html>
-		<html>
-		<head>
-			<title><?php echo $olclang["title"]; ?></title>
-			<link href="res/stylev2.css" rel="stylesheet" type="text/css">
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-			<link rel="shortcut icon" href="//s.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon">
-			<link rel="icon" href="//s.ppy.sh/favicon.ico" type="image/vnd.microsoft.icon">
-		</head>
-		<body>
-			<?php
-			if (isset($error)) {
-				echo '<div class="omgerr"><p align="center">' . $olclang["errcl"] . '</p></div>';
-			}
-			?>
-			<div align="center" id="select"><a href="/"><?php echo $olclang["ab-home"]; ?></a> <a href="#classicmode"><?php echo $olclang["ab-cl"]; ?></a> <a href="http://osu.ppy.sh/forum/t/199230/start=0"><?php echo $olclang["ab-top"]; ?></a> <a href="https://github.com/TheHowl/OsuLevelCalculator">Github</a></div>
-			<?php
-			switch (isset($_GET["calct"])) {
-				case 'true':
-				switch ($_GET["calct"]) {
-					case 'api': echo $olclang["api-res"] . $xlvl . $olclang["api-res2"] . $final . $olclang["dia"];
-					require_once 'inc/form.html';
-					require_once 'inc/footer.html'; break;
-					case 'cl':  echo $olclang["cl-res"] . $final . $olclang["dia"];
-					require_once 'inc/form.html';
-					require_once 'inc/footer.html'; break;
-					case 's2l': 
-					echo $olclang["s2l-res"] . $final . '</div><br>' . $olclang["abs"] . $olclang["dia"]; 
-					require_once 'inc/form.html';
-					require_once 'inc/footer.html'; 
-					break;
-					default: echo '<div class="txt">' . $olclang["err-2"] . '</div><br>';
-					require_once 'inc/form.html';
-					require_once 'inc/footer.html'; break;
-				}   break;
-				default: echo '<h1>' . $olclang["title"] . '</h1>';
-				require_once 'inc/form.html';
-				echo '<br><br>';
-				require_once 'inc/footer.html'; break;
-			}
-
-			?>
-		</body>
-		</html>
+$tpl = new raintpl(); //include Rain TPL
+$tpl->assign( array(
+	"olclang" => $olclang,
+	"GETMIMIC" => $_GET,
+	"final" => $final,
+	"xlvl" => (isset($xlvl) ? $xlvl : NULL),
+	) );
+$tpl->draw( "page" ); // draw the template
