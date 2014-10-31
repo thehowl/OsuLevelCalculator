@@ -1,0 +1,96 @@
+/* osu! level calculator style v2
+Completely re-made from scratch by Howl */
+
+/* defines font url for Segoe UI Light */
+@font-face {
+  font-family: "Segoe UI Light";
+  src: url("segoeuil.ttf") format("truetype");
+}
+
+/* Omaigad errors. */
+.omgerr {
+	background: #f24511;
+	color: #FFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin: 0 auto;
+	width: 100%;
+}
+/* BODY AND TITLES */
+body {
+	background: #FFF;
+	color: #222;
+	font-family: "Segoe UI Light";
+	margin: 0;
+}
+
+h1 {
+	font-size: 35pt;
+	margin-top:75px;
+	margin-left:50px;
+}
+
+.txt {
+	text-transform: uppercase;
+	opacity: 0.7;
+	margin-left: 70px;
+	padding-top: 10px;
+	font-size: 15pt;
+}
+
+.txt:last-child {
+	padding-bottom: 9px;
+}
+
+#select {
+	text-transform: uppercase;
+	font-size: 43pt;
+	opacity: 0.7;
+}
+
+a {
+	color: #12bcdb;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #10cff2
+}
+
+.result {
+	font-size: 42pt;
+	color: #10d82b;
+	margin-left: 70px;
+	padding-top: 10px;
+}
+	
+
+/* FORM */
+button, input {
+	outline: none;
+	padding: 3px 4px;
+}
+
+button {
+	background: #f7f7f7;
+	cursor: pointer;
+	border: 0;
+	font-family: "Segoe UI Light";
+	text-transform: uppercase;
+	height: 40px;
+	width: 100px;
+	font-size: 15pt
+}
+
+.submit {
+	background: #f7f7f7;
+	font-family: "Segoe UI Light";
+	font-size: 15pt;
+	border: 0;
+}
+.api {
+	width: 400px;
+}
+.cl {
+	width: 100px;
+}

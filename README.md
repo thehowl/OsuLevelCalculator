@@ -1,7 +1,6 @@
-OsuLevelCalculator
-==================
+# osu!levelcalculator
 
-A simple calculator in php were you input the level you want to reach in Osu!, and it outputs the score basing it on the official algorithm made by peppy for the score.
+A simple calculator in php were you input the level you want to reach in osu!, and it outputs the score basing it on the official algorithm made by peppy for the score.
 
 
 Things to do

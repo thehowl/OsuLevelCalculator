@@ -32,11 +32,12 @@ $olclang["cl-tt"] = "ecrivez le niveau que vous souhaitez atteindre";
 $olclang["targ-lv"] = "level souhaité";
 
 // Results
-$olclang["api-res"] = '<h1>Résultats</h1> <div class="txt">Alors, combien de score doit encore obtenir ' . $_GET["nickname"] . ' pour atteindre le niveau ';
+$olclang["api-res"] = '<h1>Résultats</h1> <div class="txt">Alors, combien de score doit encore obtenir ' . @$_GET["nickname"] . ' pour atteindre le niveau ';
 $olclang["api-res2"] = '?</div><br><div class="result">'; // obv don't change vars and html tags
 $olclang["dia"] = '</div><br><div class="txt">faites-le à nouveau!</div><br>';
-$olclang["cl-res"] = '<h1>Résultats</h1><div class="txt">Alors, pour atteindre le niveau ' . $_GET["leveltoreach"] . ', vous avez besoin d\'un score de </div><br><div class="result">';
+$olclang["cl-res"] = '<h1>Résultats</h1><div class="txt">Alors, pour atteindre le niveau ' . @$_GET["leveltoreach"] . ', vous avez besoin d\'un score de </div><br><div class="result">';
 // New part starts here [13/06/14]
-$olclang["s2l-res"] = '<h1>Résultats</h1><div class="txt">La différence entre le niveau ' . $_GET["l1"] . ' et ' . $_GET["l2"] . ' est de</div><br><div class="result">';
+$olclang["s2l-res"] = '<h1>Résultats</h1><div class="txt">La différence entre le niveau ' . @$_GET["l1"] . ' et ' . @$_GET["l2"] . ' est de</div><br><div class="result">';
 $olclang["abs"] = '<div class="txt">Note: le nombre au dessus est donné en valeur absolue!'; 
+return $olclang;
 ?>
