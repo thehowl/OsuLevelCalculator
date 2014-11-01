@@ -13,8 +13,11 @@ if (isset($_GET["calct"])) {
 		if (!empty($_GET["targlv"])) {
 			$xlvl = $_GET["targlv"];
 		}
+		elseif (!is_numeric($_GET["targlv"])) {
+			$xlvl = -1;
+		}
 		else {
-			$xlvl = floor($data[0]->level) + 1;;
+			$xlvl = floor($data[0]->level) + 1;
 		}
 		$final = number_format(round(ScoreLevelCalculator ($xlvl,$data[0]->total_score))); break;
 		case 'cl': $final = number_format(round(ScoreLevelCalculator ($_GET["leveltoreach"],0))); break;

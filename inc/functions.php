@@ -20,6 +20,9 @@ function ScoreLevelCalculator ($level,$currentScore = 0) {
 		elseif ($level = 0 || $level = 1) { 
 			$result = 0;
 		}
+		elseif ($level < 0) {
+			throw new Exception ($olclang["err"],111);
+		}
 	}
 	elseif ($level >= 101) {
 		$result = 26931190829 + 100000000000 * ($level - 100);
