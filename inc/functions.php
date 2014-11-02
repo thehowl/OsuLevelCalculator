@@ -1,6 +1,6 @@
 <?php
 function getlang() {
-	$brlang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
+	$brlang = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
 	if(file_exists("inc/languages/" . $brlang . ".php")) {
 		return require("inc/languages/" . $brlang . ".php");
 	}
