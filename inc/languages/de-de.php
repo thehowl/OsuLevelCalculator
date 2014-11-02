@@ -1,2 +1,2 @@
 <?php
-require_once "de.php";
+return require_once("de.php");

@@ -13,9 +13,6 @@ if (isset($_GET["calct"])) {
 		if (!empty($_GET["targlv"])) {
 			$xlvl = $_GET["targlv"];
 		}
-		elseif (!is_numeric($_GET["targlv"])) {
-			$xlvl = -1;
-		}
 		else {
 			$xlvl = floor($data[0]->level) + 1;
 		}
@@ -43,5 +40,6 @@ $tpl->assign( array(
 	"GETMIMIC" => $_GET,
 	"final" => $final,
 	"xlvl" => (isset($xlvl) ? $xlvl : NULL),
+	"error" => (isset($error) ? $error : NULL),
 	) );
 $tpl->draw( "page" ); // draw the template

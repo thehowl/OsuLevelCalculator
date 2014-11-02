@@ -1,2 +1,2 @@
 <?php
-require_once "pt-br.php";
+return require_once("pt-br.php");
