@@ -38,7 +38,7 @@ $tpl = new raintpl(); //include Rain TPL
 $tpl->assign( array(
 	"olclang" => $olclang,
 	"GETMIMIC" => $_GET,
-	"final" => $final,
+	"final" => (isset($final) ? $final : NULL),
 	"xlvl" => (isset($xlvl) ? $xlvl : NULL),
 	"error" => (isset($error) ? $error : NULL),
 	) );
