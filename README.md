@@ -1,14 +1,6 @@
-# osu!levelcalculator
+# osu! level calculator
 
-A simple calculator in php were you input the level you want to reach in osu!, and it outputs the score basing it on the official algorithm made by peppy for the score.
+Bad code. I've made a new version of osu! level calculator, mainly to test semantic ui. Its source is available here: https://git.zxq.co/howl/olc2
 
+The website is already using the new version. this version is dead, and the code fucking sucks.
 
-Things to do
-------------
-
-* Maybe something else? I don't know. You can also pull something that YOU want in this code [over here](https://github.com/TheHowl/OsuLevelCalculator/pulls), I'll may push it into the master branch :P Stay tuned for other changes also on the [official topic over here!](http://osu.ppy.sh/forum/t/199230/start=0).
-
-Things that YOU can do!
------------------------
-
-[Hey you, you can translate this project!](https://github.com/TheHowl/OsuLevelCalculator/wiki/Translating)
